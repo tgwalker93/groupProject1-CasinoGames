@@ -9,16 +9,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/blackjack.css">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- LINK TO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 </head>
 
 <body>
-    <!-- <form id="giphy-form">
-  <label>Search Video Game Character: </label>
-  <input type="text" id="giphy-input"><br> -->
-    <!-- Button triggers new movie to be added -->
-    <!--   <input id="add-giphy" type="submit" value="Add a giphy!">
-</form> -->
-    <!-- <button id='dealCards' type='button' class='btn btn-outline-primary'>Deal Cards</button> -->
     <div class="row">
         <div class="col-sm-6">
             <div class="panel panel-default">
@@ -44,17 +39,32 @@
         </div>
     </div>
     <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Game Text</h3>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Game Text</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="gameText"></div>
+                </div>
             </div>
-            <div class="panel-body">
-                <div id="gameText"></div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Score Board</h3>
+                </div>
+                <div class="panel-body">
+                    <h1 id="playerScore">Player Score: 0</h1>
+                    <h1 id="playerChips">Player Chips: 0 </h1>
+                    <h1 id="bet">Bet: 0 </h1>
+                    <h1 id="dealerScore">Dealer Score: 0 </h1>
+                </div>
             </div>
         </div>
     </div>
     <!--- Javascript-->
-    <script type="text/javascript" src="assets/javascript/blackjack.js"></script>
+    <script type="text/javascript" src="assets/javascript/omarBlackJackTest.js"></script>
 </body>
 
 </html>
