@@ -28,7 +28,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         console.log("variable reset")
     } else {
         console.log("No user is signed in.");
-        window.location = '../groupProject/startpage.html'
+        window.location = './index.html'
     }
 });
 
@@ -152,7 +152,7 @@ var deckObj = {
         $("#buttonView").append("<button id='playAgain' type='button' class='btn btn-md'>Play Again</button>");
         $("#playAgain").one('click', deckObj.playAgain);
         $("#playAgain").one('click', function() {
-            audio.play();
+            click.play();
         });
 
     }
